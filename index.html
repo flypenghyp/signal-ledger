@@ -210,6 +210,15 @@
       <p class="section__lede">18 个近 30 日 star 增速最快的仓库。先看方向分布，再按“真需求 / 混合 / 存疑”过滤——2026 年的 star 需要打折阅读。</p>
     </header>
 
+    <div class="cadence">
+      <span class="cadence__dot" aria-hidden="true"></span>
+      <span>月度趋势快照</span>
+      <b data-trend-period>2026.10</b>
+      <span>更新于 <b data-trend-updated>10-24</b></span>
+      <span>下次 <b data-trend-next>11-24</b></span>
+      <a href="#trendAsia">看亚洲落地路径 ↓</a>
+    </div>
+
     <div class="code-grid">
       <div class="dir-panel">
         <div class="panel-head">
@@ -261,6 +270,25 @@
         <tbody id="repoBody"><!-- JS --></tbody>
       </table>
       <p class="table-note">增量口径：未标 7d 的为 RepoRank 30 日榜（约 9/24–10/24）；标 7d 的为 10/17–10/24 周增量。REA 已与 GitHub API 总 star 交叉核对，数字自洽但量级异常，单独按“极端传播事件”处理。</p>
+    </div>
+
+    <div class="trend-asia" id="trendAsia">
+      <div class="trend-asia__head">
+        <div>
+          <p class="section__kicker">TREND → ASIA · MONTHLY SNAPSHOT</p>
+          <h3 class="subhead">七条趋势，在亚洲怎么落地</h3>
+        </div>
+        <p class="trend-asia__hint">选一条趋势：看 5 个市场的可行性、项目关键点与 12 个月实现路径。判断每月随趋势快照复核一次。</p>
+      </div>
+
+      <div class="trend-layout">
+        <div class="trend-tabs" id="trendTabs" role="tablist" aria-label="趋势方向"><!-- JS --></div>
+        <div class="trend-detail" id="trendDetail" role="tabpanel" aria-live="polite"><!-- JS --></div>
+      </div>
+
+      <p class="trend-asia__note">
+        <b>更新机制：</b>每月 24 日抓取仓库 star / 增量快照 → 复核方向与亚洲判断 → 更新 <code>data.js</code> 后发布。当前为 <span data-trend-period>2026.10</span> 首期，下次 <span data-trend-next>11-24</span>。
+      </p>
     </div>
   </section>
 
@@ -422,6 +450,7 @@
         <h2 class="footer__title">数据口径</h2>
         <p>融资：2026-09-24 至 2026-10-24 公开披露的 18 笔美欧 AI 早期融资；金额、日期、投资方取自公开原文，未披露项标注，单源未证实项标“未证实”。</p>
         <p>GitHub：总 star 取 2026-10-23/24 REST API；30 日/7 日增量取 RepoRank、七牛云 Trending、OpenGithubs 周榜，窗口不完全对齐，跨口径不可相加。</p>
+        <p>月度更新：每月 24 日抓取仓库 star / 增量快照，复核方向聚类与亚洲落地判断后更新本页；当前 <span data-trend-period>2026.10</span>，下次 <span data-trend-next>11-24</span>。</p>
         <p>亚洲：监管事实以官方法规/政府公告与律所解读为主；评级为综合判断，不构成法律或投资意见。</p>
       </div>
       <div>
