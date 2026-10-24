@@ -1,0 +1,48 @@
+name: Monthly trend snapshot
+
+on:
+  schedule:
+    # 24th of each month, 01:17 UTC = 09:17 Asia/Shanghai
+    - cron: "17 1 24 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Capture star snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/monthly_trends.py
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "signal-ledger-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trend-snapshots
+          if git diff --cached --quiet; then
+            echo "No snapshot changes."
+            exit 0
+          fi
+          git commit -m "chore: monthly trend snapshot $(date -u +%Y-%m)"
+          git push
+
+      - name: Write job summary
+        run: |
+          latest=$(ls -1t trend-snapshots/*.json | head -1)
+          {
+            echo "## Monthly trend snapshot"
+            echo ""
+            echo "Snapshot: \`$latest\`"
+            echo ""
+            echo "Next: review direction clusters and Asia feasibility, update \`signal-ledger/data.js\`, then publish."
+          } >> "$GITHUB_STEP_SUMMARY"
