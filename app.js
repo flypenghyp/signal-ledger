@@ -36,7 +36,8 @@
     dir: "all",
     repoSort: "d30",
     repoOpen: null,
-    asiaIndex: 0
+    asiaIndex: 0,
+    trendIndex: 0
   };
 
   /* ------------------------------------------------------------ hero */
@@ -495,6 +496,96 @@
     });
   }
 
+  /* ------------------------------------------------------------ trend → asia */
+  const scoreMap = { "高": 5, "中高": 4, "中": 3, "中低": 2, "低": 1 };
+  const trendRegions = ["中国大陆", "日本", "韩国", "新加坡+东南亚", "印度"];
+
+  function trendScore(t) {
+    const nums = t.ratings.map((r) => scoreMap[r] || 0);
+    return (nums.reduce((a, b) => a + b, 0) / nums.length).toFixed(1);
+  }
+
+  function fillCadence() {
+    const t = DATA.trend;
+    if (!t) return;
+    const period = t.period.replace("-", ".");
+    const updated = t.updatedAt.slice(5);
+    const next = t.nextUpdate.slice(5);
+    $$("[data-trend-period]").forEach((el) => { el.textContent = period; });
+    $$("[data-trend-updated]").forEach((el) => { el.textContent = updated; });
+    $$("[data-trend-next]").forEach((el) => { el.textContent = next; });
+  }
+
+  function renderTrendTabs() {
+    const wrap = $("#trendTabs");
+    if (!wrap || !DATA.trend) return;
+    wrap.innerHTML = DATA.trend.directions.map((t, i) => `
+      <button class="trend-tab ${i === state.trendIndex ? "is-on" : ""}" role="tab"
+              id="trendTab${i}" aria-selected="${i === state.trendIndex}"
+              aria-controls="trendDetail" data-trend="${i}">
+        <span class="trend-tab__no">${String(i + 1).padStart(2, "0")}</span>
+        <span class="trend-tab__name">${esc(t.name)}</span>
+        <span class="trend-tab__score">${trendScore(t)}</span>
+      </button>`).join("");
+    $$(".trend-tab", wrap).forEach((btn) => {
+      btn.addEventListener("click", () => selectTrend(Number(btn.dataset.trend)));
+      btn.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+          e.preventDefault();
+          selectTrend((state.trendIndex + 1) % DATA.trend.directions.length);
+          $(`#trendTab${state.trendIndex}`).focus();
+        }
+        if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+          e.preventDefault();
+          selectTrend((state.trendIndex - 1 + DATA.trend.directions.length) % DATA.trend.directions.length);
+          $(`#trendTab${state.trendIndex}`).focus();
+        }
+      });
+    });
+  }
+
+  function renderTrendDetail() {
+    const box = $("#trendDetail");
+    if (!box || !DATA.trend) return;
+    const t = DATA.trend.directions[state.trendIndex];
+    box.innerHTML = `
+      <p class="trend-detail__kicker">DIRECTION ${String(state.trendIndex + 1).padStart(2, "0")} / ${String(DATA.trend.directions.length).padStart(2, "0")} · ${esc(DATA.trend.period)}</p>
+      <h4>${esc(t.name)}</h4>
+      <p class="trend-detail__thesis">${esc(t.thesis)}</p>
+      <div class="trend-markets">
+        ${t.ratings.map((level, i) => `
+          <div class="trend-market ${levelClass[level]}">
+            <span>${esc(trendRegions[i])}</span>
+            <b>${esc(level)}</b>
+          </div>`).join("")}
+      </div>
+      <h5>PROJECT KEY POINTS</h5>
+      <ul class="trend-keys">${t.keyPoints.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+      <h5>IMPLEMENTATION PATH · 12 MONTHS</h5>
+      <ol class="trend-path">
+        ${t.path.map((p) => `<li><b>${esc(p.phase)}</b><p>${esc(p.action)}</p></li>`).join("")}
+      </ol>
+      <p class="trend-local"><b>本地化提醒 · </b>${esc(t.local)}</p>`;
+    $$(".trend-tab").forEach((btn) => {
+      const on = Number(btn.dataset.trend) === state.trendIndex;
+      btn.classList.toggle("is-on", on);
+      btn.setAttribute("aria-selected", String(on));
+    });
+  }
+
+  function selectTrend(i) {
+    if (!DATA.trend) return;
+    state.trendIndex = (i + DATA.trend.directions.length) % DATA.trend.directions.length;
+    renderTrendDetail();
+  }
+
+  function bindTrends() {
+    if (!DATA.trend) return;
+    fillCadence();
+    renderTrendTabs();
+    renderTrendDetail();
+  }
+
   /* ------------------------------------------------------------ asia */
   function renderAsia() {
     const body = $("#asiaBody");
@@ -654,6 +745,7 @@
     renderTape();
     bindDeals();
     bindRepos();
+    bindTrends();
     bindAsia();
     bindMenu();
     bindNavSpy();
