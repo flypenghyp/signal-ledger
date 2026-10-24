@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Ledger 2026.10 — 美欧 AI 资本与 GitHub 代码流向</title>
+<meta name="description" content="30 天美欧 AI 融资、GitHub 急升仓库与亚洲五市场可行性的交互式研究页面。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e7e8e2'/%3E%3Crect x='6' y='6' width='8' height='8' fill='%23c6432b'/%3E%3Crect x='18' y='18' width='8' height='8' fill='%2317414a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="masthead" id="masthead">
+  <div class="masthead__inner">
+    <a class="brand" href="#top" aria-label="Signal Ledger 首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">Signal Ledger</span>
+      <span class="brand__issue">2026.10</span>
+    </a>
+    <nav class="nav" aria-label="章节导航">
+      <a href="#capital" data-nav="capital">资本</a>
+      <a href="#code" data-nav="code">代码</a>
+      <a href="#cross" data-nav="cross">交叉</a>
+      <a href="#asia" data-nav="asia">亚洲</a>
+      <a href="#action" data-nav="action">行动</a>
+    </nav>
+    <div class="masthead__meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span>DATA CUT <b>2026-10-24</b></span>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">目录</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="移动端章节导航" hidden>
+    <a href="#capital">01 资本</a>
+    <a href="#code">02 代码</a>
+    <a href="#cross">03 交叉</a>
+    <a href="#asia">04 亚洲</a>
+    <a href="#action">05 行动</a>
+  </nav>
+</header>
+
+<main id="main">
+  <noscript>
+    <p style="padding:110px 24px 0;max-width:720px;margin:0 auto;font-size:14px;">
+      本页的筛选、排序与图表依赖 JavaScript。请启用 JavaScript，或直接阅读数据文件 <code>data.js</code> 与同目录下的研究底稿。
+    </p>
+  </noscript>
+
+  <section class="hero" id="top">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="kicker reveal">30-DAY FIELD NOTE · 2026.09.24 — 10.24</p>
+        <h1 class="hero__title" aria-label="钱在买交付，代码在装能力">
+          <span class="line"><span>钱在买交付，</span></span>
+          <span class="line"><span>代码在装能力。</span></span>
+        </h1>
+        <p class="hero__deck reveal">18 笔美欧 AI 早期融资、18 个 GitHub 急升仓库、5 个亚洲市场。把资本流向与开发者行为放在同一张桌上，看哪些能力真的被两边同时验证。</p>
+        <div class="hero__meta reveal">
+          <span>样本 18 + 18</span>
+          <span>窗口 30 天</span>
+          <span>公开来源交叉核对</span>
+        </div>
+      </div>
+
+      <aside class="tape reveal" aria-label="本期金额最高的六笔融资">
+        <div class="tape__head">
+          <span>THE 30-DAY TAPE</span>
+          <span>TOP 6 / BY SIZE</span>
+        </div>
+        <ol class="tape__list" id="heroTape"><!-- JS --></ol>
+        <a class="tape__link" href="#capital">展开全部 18 笔 <span aria-hidden="true">↘</span></a>
+      </aside>
+    </div>
+
+    <div class="stats" aria-label="关键数字">
+      <div class="stat">
+        <span class="stat__num" data-count="18">18</span>
+        <span class="stat__unit">笔</span>
+        <span class="stat__label">美欧早期融资</span>
+        <span class="stat__note">10 美 / 8 欧</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="286.9" data-decimals="1">286.9</span>
+        <span class="stat__unit">$M</span>
+        <span class="stat__label">已披露金额合计</span>
+        <span class="stat__note">非融资总额，外币按约算</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="89">89</span>
+        <span class="stat__unit">%</span>
+        <span class="stat__label">急升仓库与 Agent 相关</span>
+        <span class="stat__note">16 / 18，能力层占 67%</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="0">0</span>
+        <span class="stat__unit">家</span>
+        <span class="stat__label">披露投后估值</span>
+        <span class="stat__note">转而披露收入质量</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="findings" aria-labelledby="findingsTitle">
+    <h2 class="visually-hidden" id="findingsTitle">三条判断</h2>
+    <article class="finding reveal">
+      <p class="finding__index">01 / CAPITAL</p>
+      <h3>钱在买“能交付的结果”</h3>
+      <p>18 笔里垂直行业与应用层占绝对多数。壁垒不是模型，而是行业数据、线下履约与持牌：7,000 名查勘员、自己持牌放贷、不换手术设备只加软件层。</p>
+      <p class="finding__stat"><b>12</b> / 18 笔属于垂直行业（8）或代理经济基础设施（4）</p>
+    </article>
+    <article class="finding reveal">
+      <p class="finding__index">02 / CODE</p>
+      <h3>代码在装“可调用的能力”</h3>
+      <p>GitHub 的增量不是更强的模型，而是 Skills、记忆、多 Agent 工作台、创作生产链与本地运行时。能力被打包成可安装单元，而不是一个完整产品。</p>
+      <p class="finding__stat"><b>67</b>% 的样本集中在 Agent 能力 / 运行时 / 编排 / 记忆</p>
+    </article>
+    <article class="finding reveal">
+      <p class="finding__index">03 / ASIA</p>
+      <h3>亚洲先卖信任，再卖效率</h3>
+      <p>日本 + 新加坡是首站；治理与安全是最低摩擦的切入口，编码 Agent 负责获客，垂直 Agent 才是收入天花板。中国大陆是重资产选项，不是第一站。</p>
+      <p class="finding__stat"><b>D → A → C</b> 优先级在 5 个市场里保持稳定</p>
+    </article>
+  </section>
+
+  <section class="section" id="capital" aria-labelledby="capitalTitle">
+    <header class="section__head">
+      <p class="section__index">01</p>
+      <div>
+        <p class="section__kicker">CAPITAL / 18 DEALS</p>
+        <h2 id="capitalTitle">资本在买什么</h2>
+      </div>
+      <p class="section__lede">两个坐标轴：公布时间与金额（对数）。点的大小是阶段，颜色是地区。点击任意点，跳到对应的交易账本。</p>
+    </header>
+
+    <div class="controls" aria-label="融资筛选">
+      <div class="control-group" role="group" aria-label="按阶段筛选">
+        <span class="control-label">阶段</span>
+        <button class="chip is-on" data-stage="all" aria-pressed="true">全部</button>
+        <button class="chip" data-stage="Seed" aria-pressed="false">种子</button>
+        <button class="chip" data-stage="Series A" aria-pressed="false">A 轮</button>
+        <button class="chip" data-stage="Pre-seed" aria-pressed="false">Pre-seed</button>
+      </div>
+      <div class="control-group" role="group" aria-label="按地区筛选">
+        <span class="control-label">地区</span>
+        <button class="chip is-on" data-region="all" aria-pressed="true">全部</button>
+        <button class="chip" data-region="US" aria-pressed="false">美国</button>
+        <button class="chip" data-region="EU" aria-pressed="false">欧洲</button>
+      </div>
+      <label class="search">
+        <span class="visually-hidden">搜索公司或方向</span>
+        <input id="dealSearch" type="search" placeholder="搜索公司 / 方向…" autocomplete="off">
+      </label>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-card__head">
+        <span>DEAL PULSE — 公布日 × 金额（log）</span>
+        <span id="dealCount" class="mono">18 笔</span>
+      </div>
+      <div class="chart-stage" id="dealChartWrap">
+        <svg id="dealChart" role="img" aria-label="18 笔融资按公布时间与金额分布的散点图"></svg>
+        <div class="chart-tip" id="dealTip" hidden></div>
+      </div>
+      <div class="legend">
+        <span><i class="swatch swatch--us"></i>美国</span>
+        <span><i class="swatch swatch--eu"></i>欧洲</span>
+        <span><i class="swatch swatch--ring"></i>圈越大 = 阶段越晚</span>
+        <span class="legend__note">金额为已披露口径；€/£ 按约算美元，仅用于横向比较。</span>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="ledger" id="dealTable">
+        <caption class="visually-hidden">18 笔美欧 AI 早期融资</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="th-sort" data-sort-deal="name">公司 <span class="sort-mark">↕</span></th>
+            <th scope="col">总部</th>
+            <th scope="col">方向</th>
+            <th scope="col">轮次</th>
+            <th scope="col" class="num th-sort" data-sort-deal="amount">金额 <span class="sort-mark">↓</span></th>
+            <th scope="col" class="num th-sort" data-sort-deal="date">公布 <span class="sort-mark">↕</span></th>
+          </tr>
+        </thead>
+        <tbody id="dealBody"><!-- JS --></tbody>
+      </table>
+      <p class="table-note">点击任意一行展开：它解决什么问题、亚洲可迁移性、领投方与可信度。表内保留原币；图表金额轴按约算美元，仅用于横向比较。</p>
+    </div>
+
+    <div class="threads">
+      <h3 class="subhead">五条资金主线</h3>
+      <ol class="thread-list">
+        <li><b>种子巨型化。</b>Dream Labs $90M、Watchtower $35M，两笔种子超过多数 A 轮；重算力/重资质赛道在种子期就“一次给够”。</li>
+        <li><b>垂直行业主导。</b>18 家里 8 家是纯行业软件；壁垒是行业数据 + 线下履约/持牌，不是模型参数。</li>
+        <li><b>代理经济基础设施。</b>Azoma（ACO）、YGO（库存接口）、Klarent（测试）、Deepslate（语音）卖的都是“让代理能买/能说/能验”的管道。</li>
+        <li><b>物理 AI 按调用计费。</b>Dream Labs 开放 $3/小时 API；Destro 做跨品牌仓储编排。从项目制交付变成可计费平台层。</li>
+        <li><b>估值沉默、收入开口。</b>18 家全部未披露投后估值，却主动披露收入：Azoma 近 10 倍、Parakeet ARR 约 10 倍、MARC 融资前已盈利。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="code" aria-labelledby="codeTitle">
+    <header class="section__head">
+      <p class="section__index">02</p>
+      <div>
+        <p class="section__kicker">CODE / 18 RISERS</p>
+        <h2 id="codeTitle">代码在往哪走</h2>
+      </div>
+      <p class="section__lede">18 个近 30 日 star 增速最快的仓库。先看方向分布，再按“真需求 / 混合 / 存疑”过滤——2026 年的 star 需要打折阅读。</p>
+    </header>
+
+    <div class="code-grid">
+      <div class="dir-panel">
+        <div class="panel-head">
+          <span>DIRECTION CLUSTERS</span>
+          <span class="mono" id="dirHint">点击条形筛选</span>
+        </div>
+        <div id="dirChart" class="dir-chart"><!-- JS bars --></div>
+        <p class="panel-note">Agent 能力层 / 运行时 / 编排 / 记忆合计 12 / 18。点击任意条，右侧仓库账本同步过滤。</p>
+      </div>
+
+      <div class="code-aside">
+        <p class="code-aside__quote">真正的信号不是更强的 Agent，而是让 Agent 能装、能记、能编排、能安全地跑在本地的那一层。</p>
+        <dl class="mini-stats">
+          <div><dt>5</dt><dd>Agent Skills 能力包</dd></div>
+          <div><dt>27.8%</dt><dd>样本占比</dd></div>
+          <div><dt>27.8万</dt><dd>orca 安装包下载</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="controls controls--code" aria-label="仓库筛选">
+      <div class="control-group" role="group" aria-label="按信号质量筛选">
+        <span class="control-label">信号</span>
+        <button class="chip is-on" data-quality="all" aria-pressed="true">全部</button>
+        <button class="chip" data-quality="strong" aria-pressed="false">真需求</button>
+        <button class="chip" data-quality="mixed" aria-pressed="false">混合</button>
+        <button class="chip" data-quality="hype" aria-pressed="false">存疑</button>
+      </div>
+      <div class="control-group" role="group" aria-label="排序">
+        <span class="control-label">排序</span>
+        <button class="chip is-on" data-repo-sort="d30" aria-pressed="true">30 日增量</button>
+        <button class="chip" data-repo-sort="stars" aria-pressed="false">总 star</button>
+      </div>
+      <p class="mono controls__count" id="repoCount">18 个仓库</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="ledger" id="repoTable">
+        <caption class="visually-hidden">18 个 GitHub 急升仓库</caption>
+        <thead>
+          <tr>
+            <th scope="col">仓库</th>
+            <th scope="col">方向</th>
+            <th scope="col" class="num th-sort" data-sort-repo="stars">总 star <span class="sort-mark">↓</span></th>
+            <th scope="col" class="num">30 日 / 7 日增量</th>
+            <th scope="col">信号</th>
+          </tr>
+        </thead>
+        <tbody id="repoBody"><!-- JS --></tbody>
+      </table>
+      <p class="table-note">增量口径：未标 7d 的为 RepoRank 30 日榜（约 9/24–10/24）；标 7d 的为 10/17–10/24 周增量。REA 已与 GitHub API 总 star 交叉核对，数字自洽但量级异常，单独按“极端传播事件”处理。</p>
+    </div>
+  </section>
+
+  <section class="section section--cross" id="cross" aria-labelledby="crossTitle">
+    <header class="section__head">
+      <p class="section__index">03</p>
+      <div>
+        <p class="section__kicker">CROSS-READING</p>
+        <h2 id="crossTitle">资本与代码，<br>在同一个地方会合</h2>
+      </div>
+      <p class="section__lede">把两份名单叠起来，会出现三组“同一件事、两种证据”的对照。</p>
+    </header>
+
+    <div class="cross-grid">
+      <article class="cross-item">
+        <p class="cross-item__no">A / 能力封装</p>
+        <h3>把能力做成可调用单元</h3>
+        <div class="cross-pair">
+          <p><span>资本</span>Dream Labs 把机器人技能做成 $3/小时 API；YGO 把库存做成代理可调用接口。</p>
+          <p><span>代码</span>orca 把多个 coding agent 收进一个工作台；Skills 把专业动作打包成可安装单元。</p>
+        </div>
+        <p class="cross-item__take">含义：竞争点从“谁的模型强”转向“谁能把能力封装成别人愿意调用、愿意付费的接口”。</p>
+      </article>
+
+      <article class="cross-item">
+        <p class="cross-item__no">B / 接口收费站</p>
+        <h3>代理经济的钱在接口上</h3>
+        <div class="cross-pair">
+          <p><span>资本</span>Azoma 卖“在代理答案里被推荐”，Klarent 卖“可验证的测试”，Deepslate 卖“区域托管的语音”。</p>
+          <p>​<span>代码</span>MCP / Skills / 本地网关成为事实上的集成协议；谁能接上库存、工具与身份，谁就拿到收费站。</p>
+        </div>
+        <p class="cross-item__take">含义：亚洲最缺的不是再做一个 Agent，而是本地 OTA/航司/电商库存的“代理可调用层”与可见度测量。</p>
+      </article>
+
+      <article class="cross-item">
+        <p class="cross-item__no">C / 边界能力</p>
+        <h3>验证与治理成为新预算</h3>
+        <div class="cross-pair">
+          <p><span>资本</span>Beagle 用 7,000 名查勘员喂模型；Elio 自己持牌；XRlabs 不换设备只加软件层。</p>
+          <p><span>代码</span>security-audit、rea、AnyPS5 同时升温；但这也是 star 异常最集中的区域。</p>
+        </div>
+        <p class="cross-item__take">含义：信任不能靠 star 证明；能写进采购标书的审计、日志、合规报告，才是亚洲的溢价来源。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="asia" aria-labelledby="asiaTitle">
+    <header class="section__head">
+      <p class="section__index">04</p>
+      <div>
+        <p class="section__kicker">ASIA / 5 × 5</p>
+        <h2 id="asiaTitle">哪些能力可以搬，<br>先搬到哪里</h2>
+      </div>
+      <p class="section__lede">评级不是市场规模，而是“6–12 个月能否跑通付费闭环”。点击任意格子，右侧给出理由与切入点。</p>
+    </header>
+
+    <div class="asia-layout">
+      <div class="heatmap-wrap">
+        <table class="heatmap" id="asiaMap">
+          <caption class="visually-hidden">功能类别与亚洲五个市场的可行性矩阵</caption>
+          <thead>
+            <tr>
+              <th scope="col">能力类别</th>
+              <th scope="col">中国大陆</th>
+              <th scope="col">日本</th>
+              <th scope="col">韩国</th>
+              <th scope="col">新加坡+东南亚</th>
+              <th scope="col">印度</th>
+            </tr>
+          </thead>
+          <tbody id="asiaBody"><!-- JS --></tbody>
+        </table>
+        <div class="heat-legend">
+          <span>低</span><i class="heat-swatch h1"></i><i class="heat-swatch h2"></i><i class="heat-swatch h3"></i><i class="heat-swatch h4"></i><i class="heat-swatch h5"></i><span>高</span>
+          <span class="heat-legend__note">颜色深浅只表示综合机会分，不代表市场大小。</span>
+        </div>
+      </div>
+
+      <aside class="asia-detail" id="asiaDetail" aria-live="polite">
+        <p class="asia-detail__kicker">SELECTED CELL</p>
+        <h3 id="asiaDetailTitle">D 治理与安全 · 日本</h3>
+        <p class="asia-detail__level"><span id="asiaLevel">高</span><span id="asiaLevelNote">6–12 个月可跑通付费闭环</span></p>
+        <p class="asia-detail__reason" id="asiaReason">经济安保 + 金融厅合规；可“咨询 + 工具”打包，客单价高、决策链短。</p>
+        <p class="asia-detail__move" id="asiaMove">建议动作：以“AI 利用ガバナンス”咨询 + 审计日志/水印工具切入，先做 2 个金融或制造标杆。</p>
+        <div class="asia-detail__nav">
+          <button class="text-btn" id="asiaPrev" type="button">← 上一格</button>
+          <button class="text-btn" id="asiaNext" type="button">下一格 →</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="strategy">
+      <div>
+        <p class="section__kicker">PRIORITY</p>
+        <h3 class="subhead">D → A → C，不是 A → B → C</h3>
+        <p>先卖治理与安全（不依赖语言、监管越严越受益），再用编码 Agent 做 PLG 获客，最后用垂直 Agent 收大单。通用 memory/MCP 中间件不做——它大概率是云厂商的一个功能。</p>
+      </div>
+      <ol class="priority" aria-label="优先级">
+        <li><span>01</span><b>治理与安全</b><em>日本 / 新加坡 / 韩国（2027 加码）</em></li>
+        <li><span>02</span><b>编码与软件生成</b><em>PLG 获客，企业版变现</em></li>
+        <li><span>03</span><b>垂直行业 Agent</b><em>做接口层，不再做行业应用</em></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--action" id="action" aria-labelledby="actionTitle">
+    <header class="section__head">
+      <p class="section__index">05</p>
+      <div>
+        <p class="section__kicker">THE CALL</p>
+        <h2 id="actionTitle">如果只做三件事</h2>
+      </div>
+      <p class="section__lede">把研究变成动作，按“验证—试点—定型”三段推进。默认团队 3–8 人、能在日本/新加坡合法签约。</p>
+    </header>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__when">第 1–2 周</span>
+        <div>
+          <h3>选定治理切口</h3>
+          <p>Agent 审计日志 / 数据驻留 / 内容标识三选一；做日本 + 新加坡合规对照表；列 3 个目标客户。</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__when">第 3–6 周</span>
+        <div>
+          <h3>三个设计伙伴 PoC</h3>
+          <p>日本制造 SIer、新加坡跨国企业区域总部、印度 GCC 各 1 个；同时用开源 Skills / 多 Agent 工作台跑内部效率试点，记录 token 成本。</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__when">第 7–12 周</span>
+        <div>
+          <h3>定型与复制</h3>
+          <p>形态定为 API + 私有化部署；定价按结果/用量；对 Dream Labs 与 YGO 做亚洲可迁移性尽调，形成合作/代理/对标结论。</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="donts">
+      <p class="donts__title">三个“不要做”</p>
+      <ul>
+        <li><b>不做通用 memory / MCP 中间件。</b>在亚洲它大概率是云厂商的一个功能，不是一家公司。</li>
+        <li><b>不做“泛亚洲一套产品”。</b>日本、韩国、东南亚、印度的合规、语言、渠道几乎没有共性。</li>
+        <li><b>不把 GitHub star 当采用度。</b>本月至少 4 个样本存在明显刷星/营销疑点，先看下载与 issue。</li>
+      </ul>
+    </div>
+
+    <blockquote class="closing reveal">
+      <p>2026 年 Q4，AI 的稀缺资源已经从“模型能力”转向“可验证的交付”和“可审计的信任”。在亚洲，谁能把这两件事同时做成产品，谁就能拿到溢价。</p>
+      <cite>— Signal Ledger, 2026.10</cite>
+    </blockquote>
+  </section>
+
+  <footer class="footer" id="method">
+    <div class="footer__grid">
+      <div>
+        <p class="section__kicker">METHOD</p>
+        <h2 class="footer__title">数据口径</h2>
+        <p>融资：2026-09-24 至 2026-10-24 公开披露的 18 笔美欧 AI 早期融资；金额、日期、投资方取自公开原文，未披露项标注，单源未证实项标“未证实”。</p>
+        <p>GitHub：总 star 取 2026-10-23/24 REST API；30 日/7 日增量取 RepoRank、七牛云 Trending、OpenGithubs 周榜，窗口不完全对齐，跨口径不可相加。</p>
+        <p>亚洲：监管事实以官方法规/政府公告与律所解读为主；评级为综合判断，不构成法律或投资意见。</p>
+      </div>
+      <div>
+        <p class="section__kicker">SOURCES</p>
+        <ul class="source-list">
+          <li><a href="https://dealroom.co/briefing/2026-10-23/" target="_blank" rel="noopener">Dealroom Daily Deal</a></li>
+          <li><a href="https://tech.eu/2026/10/21/ygo-secures-eur8m-to-scale-its-ai-powered-travel-infrastructure/" target="_blank" rel="noopener">Tech.eu · YGO</a></li>
+          <li><a href="https://www.prnewswire.com/news-releases/mach9-raises-34m-series-a-to-bring-civil-engineering-into-the-ai-era-302915153.html" target="_blank" rel="noopener">PR Newswire · Mach9</a></li>
+          <li><a href="https://www.techstars.com/blog/startup-spotlight/azoma-raises-11-2m-series-a-to-help-brands-sell-through-ai-shopping-agents" target="_blank" rel="noopener">Techstars · Azoma</a></li>
+          <li><a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a></li>
+          <li><a href="https://reporank.net/en/rankings/monthly.html" target="_blank" rel="noopener">RepoRank</a></li>
+          <li><a href="https://news.qiniu.com/archives/1792196284368" target="_blank" rel="noopener">七牛云 GitHub 周榜</a></li>
+          <li><a href="https://api.github.com/repos/morluto/rea" target="_blank" rel="noopener">GitHub REST API</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Signal Ledger · 2026.10</span>
+      <span>公开信息整理，不构成投资建议</span>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
