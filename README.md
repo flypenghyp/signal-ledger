@@ -37,6 +37,14 @@ python -m http.server 8771
 
 新增或删除条目后，首页统计数字、方向聚类、表格计数会自动重算；`meta.totalDisclosed` 需要手动同步。
 
+## 月度更新
+
+趋势数据按月更新，节奏为每月 24 日：
+
+1. GitHub Action `Monthly trend snapshot`（`.github/workflows/monthly-trends.yml`）在每月 24 日 09:17（Asia/Shanghai）运行 `tools/monthly_trends.py`，抓取 18 个仓库的 star / fork / issue 快照，写入 `trend-snapshots/<YYYY-MM>.json`。
+2. 研究团队复核方向聚类与 7 条趋势的亚洲可行性，更新 `data.js` 的 `repos` 与 `trend`（`period`、`updatedAt`、`nextUpdate`、`directions`）。
+3. 运行 `python build/publish_signal_ledger.py` 发布，页面上的「月度趋势快照」与「下次更新」自动同步。
+
 ## 设计约束
 
 - 冷灰绿纸面 + 深墨 + 朱砂红，无渐变/阴影/圆角卡片堆叠。
