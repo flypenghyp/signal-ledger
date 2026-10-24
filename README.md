@@ -2,6 +2,10 @@
 
 30 天美欧 AI 融资、GitHub 急升仓库与亚洲五市场可行性的交互式研究页面。
 
+**在线查看：<https://flypenghyp.github.io/signal-ledger/>**
+
+![Signal Ledger 首屏](preview.png)
+
 ## 打开
 
 直接双击 `index.html` 即可（无构建、无依赖、无后端）。也可以起一个静态服务：
