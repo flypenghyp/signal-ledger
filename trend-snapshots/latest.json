@@ -1,0 +1,151 @@
+{
+  "period": "2026-10",
+  "generated_at": "2026-10-24T02:29:18+00:00",
+  "source": "GitHub REST API",
+  "repos": [
+    {
+      "repo": "morluto/rea",
+      "stars": 373521,
+      "delta_since_last_snapshot": null,
+      "forks": 93424,
+      "open_issues": 1485,
+      "pushed_at": "2026-10-24T02:27:49Z"
+    },
+    {
+      "repo": "eternity4719/HowToLiveBetter",
+      "stars": 68350,
+      "delta_since_last_snapshot": null,
+      "forks": 5920,
+      "open_issues": 21,
+      "pushed_at": "2026-10-21T07:20:02Z"
+    },
+    {
+      "repo": "debpalash/VoiceStudio",
+      "stars": 83445,
+      "delta_since_last_snapshot": null,
+      "forks": 9206,
+      "open_issues": 339,
+      "pushed_at": "2026-10-24T00:02:57Z"
+    },
+    {
+      "repo": "storytold/artcraft",
+      "stars": 36022,
+      "delta_since_last_snapshot": null,
+      "forks": 5693,
+      "open_issues": 516,
+      "pushed_at": "2026-10-23T21:03:47Z"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "stars": 301856,
+      "delta_since_last_snapshot": null,
+      "forks": 25375,
+      "open_issues": 201,
+      "pushed_at": "2026-10-22T09:35:28Z"
+    },
+    {
+      "repo": "DietrichGebert/ponytail",
+      "stars": 174841,
+      "delta_since_last_snapshot": null,
+      "forks": 9523,
+      "open_issues": 109,
+      "pushed_at": "2026-10-18T01:55:14Z"
+    },
+    {
+      "repo": "stablyai/orca",
+      "stars": 103952,
+      "delta_since_last_snapshot": null,
+      "forks": 6568,
+      "open_issues": 8695,
+      "pushed_at": "2026-10-24T02:29:02Z"
+    },
+    {
+      "repo": "vectorize-io/hindsight",
+      "stars": 53164,
+      "delta_since_last_snapshot": null,
+      "forks": 6232,
+      "open_issues": 128,
+      "pushed_at": "2026-10-23T19:22:09Z"
+    },
+    {
+      "repo": "paperclipai/paperclip",
+      "stars": 106618,
+      "delta_since_last_snapshot": null,
+      "forks": 17722,
+      "open_issues": 6448,
+      "pushed_at": "2026-10-24T02:26:00Z"
+    },
+    {
+      "repo": "cloudflare/security-audit-skill",
+      "stars": 42255,
+      "delta_since_last_snapshot": null,
+      "forks": 2639,
+      "open_issues": 83,
+      "pushed_at": "2026-09-14T19:29:02Z"
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "stars": 287383,
+      "delta_since_last_snapshot": null,
+      "forks": 42615,
+      "open_issues": 264,
+      "pushed_at": "2026-10-20T23:08:28Z"
+    },
+    {
+      "repo": "MadsLorentzen/ai-job-search",
+      "stars": 64130,
+      "delta_since_last_snapshot": null,
+      "forks": 19892,
+      "open_issues": 62,
+      "pushed_at": "2026-10-21T05:29:11Z"
+    },
+    {
+      "repo": "yetone/magpie",
+      "stars": 20259,
+      "delta_since_last_snapshot": null,
+      "forks": 1563,
+      "open_issues": 1598,
+      "pushed_at": "2026-10-23T23:47:11Z"
+    },
+    {
+      "repo": "cathrynlavery/diagram-design",
+      "stars": 60382,
+      "delta_since_last_snapshot": null,
+      "forks": 3904,
+      "open_issues": 42,
+      "pushed_at": "2026-10-24T00:49:53Z"
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "stars": 70846,
+      "delta_since_last_snapshot": null,
+      "forks": 6405,
+      "open_issues": 363,
+      "pushed_at": "2026-10-24T02:28:56Z"
+    },
+    {
+      "repo": "lexmount/moli",
+      "stars": 20333,
+      "delta_since_last_snapshot": null,
+      "forks": 545,
+      "open_issues": 456,
+      "pushed_at": "2026-10-24T02:28:05Z"
+    },
+    {
+      "repo": "Graphify-Labs/graphify",
+      "stars": 133931,
+      "delta_since_last_snapshot": null,
+      "forks": 12794,
+      "open_issues": 1597,
+      "pushed_at": "2026-10-23T17:59:28Z"
+    },
+    {
+      "repo": "boykopovar/AnyPS5",
+      "stars": 47419,
+      "delta_since_last_snapshot": null,
+      "forks": 4407,
+      "open_issues": 1537,
+      "pushed_at": "2026-10-24T02:28:18Z"
+    }
+  ]
+}
