@@ -1,151 +1,151 @@
 {
-  "period": "2026-10",
-  "generated_at": "2026-10-24T02:29:18+00:00",
+  "period": "2026-11",
+  "generated_at": "2026-11-24T11:01:46+00:00",
   "source": "GitHub REST API",
   "repos": [
     {
       "repo": "morluto/rea",
-      "stars": 373521,
-      "delta_since_last_snapshot": null,
-      "forks": 93424,
-      "open_issues": 1485,
-      "pushed_at": "2026-10-24T02:27:49Z"
+      "stars": 476300,
+      "delta_since_last_snapshot": 102779,
+      "forks": 116016,
+      "open_issues": 1202,
+      "pushed_at": "2026-11-24T11:00:23Z"
     },
     {
       "repo": "eternity4719/HowToLiveBetter",
-      "stars": 68350,
-      "delta_since_last_snapshot": null,
-      "forks": 5920,
-      "open_issues": 21,
-      "pushed_at": "2026-10-21T07:20:02Z"
+      "stars": 77366,
+      "delta_since_last_snapshot": 9016,
+      "forks": 6848,
+      "open_issues": 16,
+      "pushed_at": "2026-11-16T09:46:16Z"
     },
     {
       "repo": "debpalash/VoiceStudio",
-      "stars": 83445,
-      "delta_since_last_snapshot": null,
-      "forks": 9206,
-      "open_issues": 339,
-      "pushed_at": "2026-10-24T00:02:57Z"
+      "stars": 117487,
+      "delta_since_last_snapshot": 34042,
+      "forks": 13108,
+      "open_issues": 25,
+      "pushed_at": "2026-11-23T22:34:56Z"
     },
     {
       "repo": "storytold/artcraft",
-      "stars": 36022,
-      "delta_since_last_snapshot": null,
-      "forks": 5693,
-      "open_issues": 516,
-      "pushed_at": "2026-10-23T21:03:47Z"
+      "stars": 42141,
+      "delta_since_last_snapshot": 6119,
+      "forks": 6487,
+      "open_issues": 792,
+      "pushed_at": "2026-11-23T11:20:27Z"
     },
     {
       "repo": "mattpocock/skills",
-      "stars": 301856,
-      "delta_since_last_snapshot": null,
-      "forks": 25375,
-      "open_issues": 201,
-      "pushed_at": "2026-10-22T09:35:28Z"
+      "stars": 331774,
+      "delta_since_last_snapshot": 29918,
+      "forks": 27876,
+      "open_issues": 266,
+      "pushed_at": "2026-11-19T13:35:13Z"
     },
     {
       "repo": "DietrichGebert/ponytail",
-      "stars": 174841,
-      "delta_since_last_snapshot": null,
-      "forks": 9523,
-      "open_issues": 109,
-      "pushed_at": "2026-10-18T01:55:14Z"
+      "stars": 197772,
+      "delta_since_last_snapshot": 22931,
+      "forks": 11188,
+      "open_issues": 328,
+      "pushed_at": "2026-11-22T02:31:58Z"
     },
     {
       "repo": "stablyai/orca",
-      "stars": 103952,
-      "delta_since_last_snapshot": null,
-      "forks": 6568,
-      "open_issues": 8695,
-      "pushed_at": "2026-10-24T02:29:02Z"
+      "stars": 135181,
+      "delta_since_last_snapshot": 31229,
+      "forks": 8643,
+      "open_issues": 9517,
+      "pushed_at": "2026-11-24T11:00:40Z"
     },
     {
       "repo": "vectorize-io/hindsight",
-      "stars": 53164,
-      "delta_since_last_snapshot": null,
-      "forks": 6232,
-      "open_issues": 128,
-      "pushed_at": "2026-10-23T19:22:09Z"
+      "stars": 63025,
+      "delta_since_last_snapshot": 9861,
+      "forks": 7402,
+      "open_issues": 221,
+      "pushed_at": "2026-11-24T10:51:52Z"
     },
     {
       "repo": "paperclipai/paperclip",
-      "stars": 106618,
-      "delta_since_last_snapshot": null,
-      "forks": 17722,
-      "open_issues": 6448,
-      "pushed_at": "2026-10-24T02:26:00Z"
+      "stars": 116543,
+      "delta_since_last_snapshot": 9925,
+      "forks": 19347,
+      "open_issues": 6874,
+      "pushed_at": "2026-11-24T10:00:34Z"
     },
     {
       "repo": "cloudflare/security-audit-skill",
-      "stars": 42255,
-      "delta_since_last_snapshot": null,
-      "forks": 2639,
-      "open_issues": 83,
+      "stars": 77714,
+      "delta_since_last_snapshot": 35459,
+      "forks": 5242,
+      "open_issues": 142,
       "pushed_at": "2026-09-14T19:29:02Z"
     },
     {
       "repo": "affaan-m/ECC",
-      "stars": 287383,
-      "delta_since_last_snapshot": null,
-      "forks": 42615,
-      "open_issues": 264,
-      "pushed_at": "2026-10-20T23:08:28Z"
+      "stars": 309840,
+      "delta_since_last_snapshot": 22457,
+      "forks": 45565,
+      "open_issues": 204,
+      "pushed_at": "2026-11-23T04:55:48Z"
     },
     {
       "repo": "MadsLorentzen/ai-job-search",
-      "stars": 64130,
-      "delta_since_last_snapshot": null,
-      "forks": 19892,
-      "open_issues": 62,
-      "pushed_at": "2026-10-21T05:29:11Z"
+      "stars": 73206,
+      "delta_since_last_snapshot": 9076,
+      "forks": 23414,
+      "open_issues": 46,
+      "pushed_at": "2026-11-24T04:26:03Z"
     },
     {
       "repo": "yetone/magpie",
-      "stars": 20259,
-      "delta_since_last_snapshot": null,
-      "forks": 1563,
-      "open_issues": 1598,
-      "pushed_at": "2026-10-23T23:47:11Z"
+      "stars": 40842,
+      "delta_since_last_snapshot": 20583,
+      "forks": 3735,
+      "open_issues": 5054,
+      "pushed_at": "2026-11-24T10:22:03Z"
     },
     {
       "repo": "cathrynlavery/diagram-design",
-      "stars": 60382,
-      "delta_since_last_snapshot": null,
-      "forks": 3904,
-      "open_issues": 42,
-      "pushed_at": "2026-10-24T00:49:53Z"
+      "stars": 71395,
+      "delta_since_last_snapshot": 11013,
+      "forks": 4767,
+      "open_issues": 39,
+      "pushed_at": "2026-11-23T11:00:38Z"
     },
     {
       "repo": "heygen-com/hyperframes",
-      "stars": 70846,
-      "delta_since_last_snapshot": null,
-      "forks": 6405,
-      "open_issues": 363,
-      "pushed_at": "2026-10-24T02:28:56Z"
+      "stars": 89232,
+      "delta_since_last_snapshot": 18386,
+      "forks": 8322,
+      "open_issues": 325,
+      "pushed_at": "2026-11-24T10:58:30Z"
     },
     {
       "repo": "lexmount/moli",
-      "stars": 20333,
-      "delta_since_last_snapshot": null,
-      "forks": 545,
-      "open_issues": 456,
-      "pushed_at": "2026-10-24T02:28:05Z"
+      "stars": 24407,
+      "delta_since_last_snapshot": 4074,
+      "forks": 706,
+      "open_issues": 893,
+      "pushed_at": "2026-11-24T10:58:44Z"
     },
     {
       "repo": "Graphify-Labs/graphify",
-      "stars": 133931,
-      "delta_since_last_snapshot": null,
-      "forks": 12794,
-      "open_issues": 1597,
-      "pushed_at": "2026-10-23T17:59:28Z"
+      "stars": 152731,
+      "delta_since_last_snapshot": 18800,
+      "forks": 14682,
+      "open_issues": 1715,
+      "pushed_at": "2026-11-23T19:14:02Z"
     },
     {
       "repo": "boykopovar/AnyPS5",
-      "stars": 47419,
-      "delta_since_last_snapshot": null,
-      "forks": 4407,
-      "open_issues": 1537,
-      "pushed_at": "2026-10-24T02:28:18Z"
+      "stars": 61154,
+      "delta_since_last_snapshot": 13735,
+      "forks": 5940,
+      "open_issues": 2842,
+      "pushed_at": "2026-11-24T10:57:16Z"
     }
   ]
 }
